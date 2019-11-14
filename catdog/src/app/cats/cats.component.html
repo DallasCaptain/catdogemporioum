@@ -1,0 +1,15 @@
+<h3>SelectedCat {{selectedCat}}</h3>
+<p>
+  <img src='./assets/dumbcat.jpg'>
+  <button (click)="setCat('dumbcat')" [routerLink]="['/dungeon','dumbcat']">Facts about Dumb Cat</button>
+</p>
+<p>
+  <img src='./assets/grumpycat.jpg'>
+  <button (click)="setCat('grumpycat')" [routerLink]="['/dungeon','grumpycat']">Facts about Grumpy Cat</button>
+</p>
+<p>
+  <img src='./assets/inqcat.jpg'>
+  <button (click)="setCat('inqcat')" [routerLink]="['/dungeon','inqcat']">Facts about Inquisitive Cat</button>
+</p>
+
+<router-outlet ></router-outlet>
