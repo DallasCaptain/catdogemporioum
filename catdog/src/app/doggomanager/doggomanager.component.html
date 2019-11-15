@@ -1,0 +1,27 @@
+<hr>
+
+<h3 *ngFor='let i of errs'>{{i['message']}}</h3>
+ 
+
+
+
+<form (submit)="createDog()">
+  <table>
+    <tr>
+      <td>Name:</td><td><input type="text" name='name' [(ngModel)]='dog.name'></td>
+    </tr>
+    <tr>
+      <td>Url:</td><td><input type="text" name='url' [(ngModel)]='dog.url'></td>
+    </tr>
+    <tr>
+      <td>Favorite Toy:</td><td><input type="text" name='favoriteToy' [(ngModel)]='dog.favoriteToy'></td>
+    </tr>
+   
+  </table>
+   
+  
+  
+  
+  
+  <input type="submit" value="Create Task" />
+</form>

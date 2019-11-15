@@ -1,0 +1,12 @@
+form{
+    background-color: rgb(56, 55, 55);
+    color: silver;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+table{
+    margin: 0 auto;
+}
+tr{
+    text-align: right;
+}

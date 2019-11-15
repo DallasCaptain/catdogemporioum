@@ -1,3 +1,24 @@
-<p>
+<button (click)='togglemanager()'>Toggle Doggo Manager</button>
+
+<div>
   dogs works!
-</p>
+  <table>
+    <tr>
+      <th>Dog Name</th>
+      <th>Image</th>
+      <th>Favorite Toy</th>
+    </tr>
+    <tr *ngFor= 'let dog of dogs'>
+      
+          <td>{{dog.name}}</td>
+          <td><img src="{{dog.url}}" alt='awesome looking doggo'></td>
+          <td>{{dog.favoriteToy}}</td>
+    </tr>
+  </table>
+  
+
+  
+
+</div>
+
+<app-doggomanager *ngIf="showmanager" [dogs]='dogs'></app-doggomanager>
