@@ -24,5 +24,21 @@ export class DogsComponent implements OnInit {
     this.showmanager = !this.showmanager
   }
 
+  hovered(event){
+    event.target.parentElement.parentElement.style.backgroundColor = 'firebrick';
+    event.target.parentElement.parentElement.firstChild.style.fontSize = '2em';
+    event.target.parentElement.parentElement.lastChild.style.fontSize = '2em';
+    event.target.style.width = '150px';
+    event.target.style.height = '150px'
+    
+  }
+  unhovered(event){
+    event.target.parentElement.parentElement.style.backgroundColor = 'white';
+    event.target.parentElement.parentElement.firstChild.style.fontSize = '1em';
+    event.target.parentElement.parentElement.lastChild.style.fontSize = '1em';
+    event.target.style.width = '75px';
+    event.target.style.height = '75px';
+    console.log(event)
+  }
 
 }

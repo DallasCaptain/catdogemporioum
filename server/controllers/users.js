@@ -5,6 +5,16 @@ module.exports = {
         user = User.findOne({name:'bob'})
         return user
     },
+
+    update:(req,res)=>{
+        
+        user = User.findOne({id:req.params.id})
+        .then(()=>{
+            user.name = req.body.name
+            user.save()
+        })
+
+    },
     create: (req, res) => {
         user = new User ()
         user.name = 'bob'

@@ -11,7 +11,7 @@
     <tr *ngFor= 'let dog of dogs'>
       
           <td>{{dog.name}}</td>
-          <td><img src="{{dog.url}}" alt='awesome looking doggo'></td>
+          <td><img (mouseover)='hovered($event)' (mouseleave)='unhovered($event)' src="{{dog.url}}" alt='awesome looking doggo'></td>
           <td>{{dog.favoriteToy}}</td>
     </tr>
   </table>
